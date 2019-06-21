@@ -1,0 +1,25 @@
+<!-- Modals -->
+<div class="modal-wrapper" id="modal_wrapper">
+    <div class="modal" *ngIf="id === 'text-modal'">
+        <h1>{{ textCaption }}</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit neque fuga repudiandae asperiores praesentium incidunt sint quia nihil, eum aut harum modi possimus tenetur soluta in, ex, esse consequuntur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit neque fuga repudiandae asperiores praesentium incidunt sint quia nihil, eum aut harum modi possimus tenetur soluta in, ex, esse consequuntur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit neque fuga repudiandae asperiores praesentium incidunt sint quia nihil, eum aut harum modi possimus tenetur soluta in, ex, esse consequuntur.</p>
+        <a href="#" class="btn btn-red" (click)="close()">Close</a>
+    </div>  <!-- End of Text Modal -->
+
+    <div class="modal" *ngIf="id === 'image-modal'">
+        <div class="bg-img" [style.background-image]="imagePath"></div>
+        <h1>{{ imageCaption }}</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, debitis distinctio quisquam eaque quis ex excepturi exercitationem! Cum vitae odio dignissimos, facilis blanditiis alias cupiditate ea. Quis ab dignissimos autem?</p>
+        <a href="#" class="btn btn-red" (click)="close()">Close</a>
+    </div>  <!-- End of Image Modal -->
+
+    <div class="modal" *ngIf="id === 'video-modal'">
+        <iframe [src]="videoPath | safeVideo" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h1>{{ videoCaption }}</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit neque fuga repudiandae asperiores praesentium incidunt sint quia nihil, eum aut harum modi possimus tenetur soluta in, ex, esse consequuntur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit neque fuga repudiandae asperiores praesentium incidunt sint quia nihil, eum aut harum modi possimus tenetur soluta in, ex, esse consequuntur.</p>
+        <a href="#" class="btn btn-red" (click)="close()">Close</a>
+    </div>  <!-- End of Video Modal -->
+</div>

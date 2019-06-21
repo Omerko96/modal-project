@@ -1,0 +1,51 @@
+/* Styling Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Styling Buttons */
+.container .btn {
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 30px 15px;
+    display: inline-block;
+    padding: 8px 22px;
+    border-radius: 50px;
+    transition: all ease 0.3s;
+}
+.container .btn-red {
+    color: #000000;
+    background-color: transparent;
+    border: 2px solid #d32f2f;
+}
+.container .btn-red:hover,
+.container .btn-red:active,
+.container .btn-red:focus {
+    color: #ffffff;
+    background-color: #d32f2f;
+}
+.container .btn-blue {
+    color: #000000;
+    background-color: transparent;
+    border: 2px solid #1976d2;
+}
+.container .btn-blue:hover,
+.container .btn-blue:active,
+.container .btn-blue:focus {
+    color: #ffffff;
+    background-color: #1976d2;
+}
+.container .btn-green {
+    color: #000000;
+    background-color: transparent;
+    border: 2px solid #2e7d32;
+}
+.container .btn-green:hover,
+.container .btn-green:active,
+.container .btn-green:focus {
+    color: #ffffff;
+    background-color: #2e7d32;
+}

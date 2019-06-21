@@ -1,0 +1,13 @@
+/* Styling Header */
+header {
+    background-image: url('https://images4.alphacoders.com/199/199584.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 120px 0px;
+}
+header h1 {
+    font-size: 46px;
+    text-align: center;
+    color: #ffffff;
+}
